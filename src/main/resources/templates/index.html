@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<p th:text="${msg}">-->
+<!--</p>-->
+<!--<p th:text="${stu.getId()}"></p>-->
+<!--<p th:text="${stu.name}"></p>-->
+<!--<div th:object="${stu}">-->
+    <!--<p th:text="*{name}"></p>-->
+<!--</div>-->
+<p th:each="stu : ${stus}">
+    <span th:text="${stuStat.count}">x</span>
+    <span th:text="${stu.id}"></span>
+    <span th:text="${stu.name}"></span>
+</p>
+</body>
+</html>
